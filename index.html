@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>cross request</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div ng-controller="controller" class="container">
+	<form class="container">
+	<label for="usr">hall ticket no:</label>
+  <input type="text" ng-model="name.name" class="form-control" id="usr" ><br>
+ 
+  <input type="submit" value="Submit" ng-click="submit(name);" class="btn btn-primary">
+</form>
+<div ng-bind-html="myHTML" ng-show="data"></div>
+</div>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.4/angular-sanitize.js"></script>
+ <script src="controller.js"></script>
+</body>
+</html>
